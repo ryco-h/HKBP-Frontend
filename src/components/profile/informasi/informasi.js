@@ -1,24 +1,22 @@
 import * as React from 'react';
 import { Fragment, useState } from "react";
+import Template from "../../template"
 import { useInformasiStyles, useJadwalKegiatanStyles } from "./informasi.style"
-import Template from "../../template";
-
 import { Desktop, Mobile } from "../../../services/responsive";
 
+import SwipeableViews from 'react-swipeable-views';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import { useMediaQuery } from "react-responsive";
-import SwipeableViews from 'react-swipeable-views';
 
+import { Accordion, AccordionDetails, AccordionSummary, Chip, Divider, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
 import Typography from '@mui/material/Typography';
 import Box from '@mui/material/Box';
-import { Accordion, AccordionDetails, AccordionSummary, Chip, Divider, FormControl, InputLabel, MenuItem, Select } from "@mui/material";
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import YouTubeIcon from '@mui/icons-material/YouTube';
 import DoneIcon from '@mui/icons-material/Done';
-
 
 export default function InformasiIndex() {
     return(
@@ -47,9 +45,9 @@ function Informasi() {
     const styles = useInformasiStyles()
 
     const theme = useTheme();
-    const [value, setValue] = React.useState(0);
+    const [value, setValue] = useState(0);
 
-    const handleChange = (newValue) => {
+    const handleChange = (event, newValue) => {
         setValue(newValue);
     };
 
