@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "HKBP Purwakarta",
+  "name": "Website HKBP Purwakarta",
   "icons": [
     {
       "src": "favicon.ico",
@@ -21,5 +21,6 @@
   "start_url": ".",
   "display": "standalone",
   "theme_color": "#000000",
+  "description": "Website untuk mengakses dokumen ibadah HKBP Purwakarta serta informasi pelayan-pelayan Gereja HKBP Purwakarta.",
   "background_color": "#ffffff"
 }
